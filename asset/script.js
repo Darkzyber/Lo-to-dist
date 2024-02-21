@@ -4,23 +4,25 @@ let finish = document.getElementById("finish");
 let todo = document.getElementById("todo");
 
 for(list of item){
-    list.addEventListener("dragstart", function(e){
+    list.addEventListener("dragstart", (e) => {
         let selected = e.target;
 
-        finish.addEventListener("dragover", function(e){
+        finish.addEventListener("dragover", (e) => {
             e.preventDefault();
         });
-        finish.addEventListener("drop", function(e){
+        finish.addEventListener("drop", (e) => {
             finish.appendChild(selected);
             selected = null;
         });
 
-        todo.addEventListener("dragover", function(e){
+        todo.addEventListener("dragover", (e) => {
             e.preventDefault();
         });
-        todo.addEventListener("drop", function(e){
+        todo.addEventListener("drop", (e) => {
             todo.appendChild(selected);
             selected = null;
         });
     })
 }
+
+

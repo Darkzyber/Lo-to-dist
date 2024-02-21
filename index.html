@@ -5,25 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lo to dist</title>
     <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="asset/navbar.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
+    <nav>
+        <p id="logo-text">LO TO DIST</p>
+        <ul>
+            <li>Project: _____</li>
+        </ul>
+    </nav>
+    <div class="panel">
+        <div class="son_panel redd">
+            <h3>Remove</h3>
+            <h4>3</h4>
+        </div>
+        <div class="son_panel yelloww">
+            <h3>All List</h3>
+            <h3>14</h3>
+        </div>
+        <div class="son_panel greenn">
+            <h3>Success</h3>
+            <h4>0</h4>
+        </div>
+        <div class="son_panel bluee">
+            <h3>Score</h3>
+            <h3>1</h3>
+        </div>
+    </div>
     <div class="container">
-        <div id="todo">
-            <div class="list" draggable="true">
-                <p>List 1</p>
+        <div class="son_container">
+            <div class="todo">
+                <h2>Lo To Dist</h2>
             </div>
-            <div class="list" draggable="true">
-                <p>List 2</p>
-            </div>
-            <div class="list" draggable="true">
-                <p>List 3</p>
-            </div>
-            <div class="list" draggable="true">
-                <p>List 4</p>
+            <div class="finish">
+                <h2>Finish</h2>
             </div>
         </div>
-        <div id="finish">
-
+        <div class="son_container">
+            <div id="todo">
+                <div id="sortable">
+                    <div class="list" draggable="true">
+                        <p>1</p>
+                    </div>
+                    <div class="list" draggable="true">
+                        <p>2</p>
+                    </div>
+                    <div class="list" draggable="true">
+                        <p>3</p>
+                    </div>
+                    <div class="list" draggable="true">
+                        <p>4</p>
+                    </div>
+                </div>
+            </div>
+            <div id="finish">
+                <div id="sortable_end">
+                </div>
+    
+            </div>
+        </div>
+        <div class="son_container">
+            <div class="addon todo" draggable="true">
+                <form action="" class="form_group field">
+                    <input type="text" name="cre_type" class="form_field" id="cre_type" placeholder="">
+                    <label for="name" class="form_label">Add+</label>
+                </form>
+            </div>
+            
+            <div class="addon todo" id="delete">
+                <h2>REMOVE</h2>
+            </div>
         </div>
     </div>
 
