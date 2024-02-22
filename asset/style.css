@@ -1,13 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
     font-family: 'Tahoma', sans-serif;
     box-sizing: border-box;
 }
+html{
+  background: #2c313c;
+}
 .container{
     width: 100%;
-    min-height: calc(100vh - 64px - 205px);
-    background: #2c313c;
+    min-height: calc(100vh - 64px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,13 +20,18 @@
     width: 100%;
     background: #2c313c;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: row;
 }
+.blox{
+  margin: 0px 0px 0px 4vh;
+}
+.blox h2{
+  margin: 0px 20px;
+}
 #todo, #finish{
     width: 350px;
-    height: 400px;
+    height: 65vh;
     margin: 5px 20px;
     border: 2px solid #1c212c;
     border-radius: 12px;
@@ -67,10 +75,12 @@
     color: #cfcfcf;
     display: flex;
     align-items: center;
+    transition: 0.18s;
     cursor: grab;
 }
 .list:hover{
     background: #191d27;
+    box-shadow: 1px 1px 2px #a5a5a5;
     transition: 0.18s;
 
 }
@@ -149,36 +159,58 @@
 
 
 .panel{
-    min-height: 205px;
     background: #2c313c;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     text-align: center;
-    justify-content: center;
+    margin: 34px 0px;
 }
 .panel h3,.panel h4{
     color: #cfcfcf;
     margin: 15px 0px 12px;
 }
 .son_panel{
-    width: 130px;
-    height: 130px;
-    margin: 50px 40px 0px;
+    min-width: 100px;
+    min-height: 100px;
+    width: calc(23vh - (2vh + 64px));
+    height: calc(23vh - (2vh + 64px));
+    margin: 0vh 0px 3vh;
     border: 2px solid #1c212c;
+    background-color: #1c212c;
     border-radius: 12px;
     overflow:auto;
     padding: 10px;
 }
 .redd{
-    border: 5px solid #b11b48;
+  transition: 0.3s;  
+  box-shadow: 4px 4px 6px #b11b48;
 }
 .greenn{
-    border: 5px solid #22943b;
+  transition: 0.3s;  
+  box-shadow: 4px 4px 6px #22943b;
 }
 .bluee{
-    border: 5px solid #295ca0;
+  transition: 0.3s;  
+  box-shadow: 4px 4px 6px #295ca0;
 }
 .yelloww{
-    border: 5px solid #dab92b;
+  transition: 0.3s;  
+  box-shadow: 4px 4px 6px #dab92b;
+}
+
+.redd:hover{
+  box-shadow: 10px 10px 11px #eb1f5c;
+  transition: 0.3s;
+}
+.greenn:hover{
+  box-shadow: 10px 10px 11px #33db57;
+  transition: 0.3s;
+}
+.bluee:hover{
+  box-shadow: 10px 10px 11px #3476ce;
+  transition: 0.3s;
+}
+.yelloww:hover{
+  box-shadow: 10px 10px 11px #f3d23d;
+  transition: 0.3s;
 }
